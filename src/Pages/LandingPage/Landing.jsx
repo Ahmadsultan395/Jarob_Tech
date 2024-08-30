@@ -21,7 +21,8 @@ import { Brightness1, Filter, Gradient } from "@mui/icons-material";
 import TechStacks from "./components/TechStacks/TechStacks";
 import ContactForm from "./components/ContactUs/ContactForm";
 import Footer from "../Components/Footer/Footer";
-import Page from "../../components/Page/Page"
+import Page from "../../components/page";
+// import Page from "../../components/Page/Page";
 // import { Route, Router, Routes } from "react-router-dom";
 
 const Landing = () => {

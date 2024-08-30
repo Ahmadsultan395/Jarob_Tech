@@ -145,17 +145,17 @@ const Header2 = ({scrollToHero, scrollToAbout, scrollToService, scrollToStacks, 
 
   return (
     <Box
-      sx={{
-        margin:'0 auto',
-        padding: isSmall ? '.5rem 2rem .5rem 2rem' : '1rem 2.5rem 1rem 2.5rem',
-        display: "flex",
-        // justifyContent: "center",
-        alignItems: "center",
-        position: "sticky",
-        top: 0,
-        zIndex: 1000,
-        
-      }}
+    sx={{
+      margin: '0 auto',
+      padding: ColorChange ? (isSmall ? '0.5rem' : '1rem 0rem') : (isSmall ? '0.5rem 1rem' : '1rem 2.5rem'),
+      display: "flex",
+      alignItems: "center",
+      position: "sticky",
+      top: 0,
+      zIndex: 1000,
+      height: 'auto', 
+      minHeight: '3rem', // Add this to maintain a consistent minimum height
+    }}
     >
       {/* ==============================================NAVBAR=========================== */}
       <Box

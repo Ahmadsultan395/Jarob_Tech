@@ -20,9 +20,6 @@ import { IoLocationOutline } from "react-icons/io5";
 import { LuPhone } from "react-icons/lu";
 import { AiOutlineMail } from "react-icons/ai";
 
-
-
-
 const CustomTextField = styled(TextField)({
   "& .MuiOutlinedInput-root": {
     "& fieldset": {
@@ -60,13 +57,13 @@ const ContactForm = () => {
 
   const handleClick = (event) => {
     event.preventDefault();
-    window.location.href = 'mailto:info@jarobtech.com';
+    window.location.href = "mailto:info@jarobtech.com";
   };
   return (
     <>
       <Box
         sx={{
-          marginTop:'2rem',
+          marginTop: "2rem",
           padding: "3% 10%",
           backgroundColor: "#f5f5f5",
         }}
@@ -77,7 +74,7 @@ const ContactForm = () => {
               color: theme.palette.primary.main,
               fontSize: "1.1rem",
               fontWeight: "400",
-              fontFamily:'Inter'
+              fontFamily: "Inter",
               // textAlign:'center'
             }}
           >
@@ -95,7 +92,7 @@ const ContactForm = () => {
                   fontWeight: 600,
                   // color: theme.palette.primary.main,
                   fontFamily: "Inter",
-                  color:'#4b4b4b'
+                  color: "#4b4b4b",
                 }}
               >
                 Contact With Us
@@ -112,84 +109,125 @@ const ContactForm = () => {
                   fontFamily: "Inter",
                 }}
               >
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book. It has
-                survived not only five centuries, but also the leap into
-                electronic typesetting, remaining essentially unchanged.
+                Ready to turn your business vision into reality? Let's talk
+                about your next project. Our team of experienced IT
+                professionals is eager to discuss your unique needs and provide
+                tailored solutions. Get in touch with your trusted team that
+                meets your desires.
               </Typography>
               <br />
 
-             <Box>
               <Box>
-                <Typography  sx={{
-                  fontSize: isSmall ? "1.3rem" : isMedium ? "1.6rem" : "1.8rem",
-                  fontWeight: 600,
-                  color:'#4b4b4b',
-                  // color: theme.palette.primary.main,
-                  fontFamily: "Inter",'&:hover' : {
-                      color:'#5dc30f'
-                    }
-                }}>
-                Head Office
-                </Typography>
-              </Box>
-
-
-              <Box sx={{
-                display:'flex',
-                flexDirection:'column',
-                justifyContent:'start',
-                marginLeft:'-0.8rem'
-              }} >
-                <Box sx={{display:'flex', alignItems:'center', cursor:'pointer',
-                  '&:hover .formlink1, &:hover .formtext1' : {
-                      color:'#5dc30f'
-                    }
-                }}>
-                  <IconButton >
-                  <IoLocationOutline className="formlink1" color={'#3d73ec'}/>
-                  </IconButton>
-                  <Typography className="formtext1" sx={{fontFamily:'Inter',
-                    
-                  }}>
-                  Tech City Township, Lahore-Pakistan
+                <Box>
+                  <Typography
+                    sx={{
+                      fontSize: isSmall
+                        ? "1.3rem"
+                        : isMedium
+                        ? "1.6rem"
+                        : "1.8rem",
+                      fontWeight: 600,
+                      color: "#4b4b4b",
+                      // color: theme.palette.primary.main,
+                      fontFamily: "Inter",
+                      "&:hover": {
+                        color: "#5dc30f",
+                      },
+                    }}
+                  >
+                    Head Office
                   </Typography>
                 </Box>
 
-                <a href="tel: +92 (307) 067 3595" style={{textDecoration:'none', color:'black'}}>
-                <Box sx={{display:'flex', alignItems:'center' , cursor:'pointer'}}>
-                  <IconButton>
-                  <LuPhone color={'#3d73ec'}/>
-                  </IconButton>
-                  <Typography sx={{fontFamily:'Inter',
-                    '&:hover' : {
-                      color:'#5dc30f'
-                    }
-                  }}>
-                  +92 (307) 067 3595
-                  </Typography>
-                </Box>
-                </a>
+                <Box
+                  sx={{
+                    display: "flex",
+                    flexDirection: "column",
+                    justifyContent: "start",
+                    marginLeft: "-0.8rem",
+                  }}
+                >
+                  <Box
+                    sx={{
+                      display: "flex",
+                      alignItems: "center",
+                      cursor: "pointer",
+                      "&:hover .formlink1, &:hover .formtext1": {
+                        color: "#5dc30f",
+                      },
+                    }}
+                  >
+                    <IconButton>
+                      <IoLocationOutline
+                        className="formlink1"
+                        color={"#3d73ec"}
+                      />
+                    </IconButton>
+                    <Typography
+                      className="formtext1"
+                      sx={{ fontFamily: "Inter" }}
+                    >
+                      Tech City Township, Lahore-Pakistan
+                    </Typography>
+                  </Box>
 
-                <a href="mailto: info@jarobtech.com" style={{textDecoration:'none', color:'black'}} onClick={handleClick}>
-                <Box sx={{display:'flex', alignItems:'center',cursor:'pointer'}}>
-                  <IconButton>
-                  <AiOutlineMail color={'#3d73ec'}/>
-                  </IconButton>
-                  <Typography sx={{fontFamily:'Inter',
-                    '&:hover ' : {
-                      color:'#5dc30f'
-                    }
-                  }}>
-                  info@jarobtech.com
-                  </Typography>
+                  <a
+                    href="tel: +92 (307) 067 3595"
+                    style={{ textDecoration: "none", color: "black" }}
+                  >
+                    <Box
+                      sx={{
+                        display: "flex",
+                        alignItems: "center",
+                        cursor: "pointer",
+                      }}
+                    >
+                      <IconButton>
+                        <LuPhone color={"#3d73ec"} />
+                      </IconButton>
+                      <Typography
+                        sx={{
+                          fontFamily: "Inter",
+                          "&:hover": {
+                            color: "#5dc30f",
+                          },
+                        }}
+                      >
+                        +92 (307) 067 3595
+                      </Typography>
+                    </Box>
+                  </a>
+
+                  <a
+                    href="mailto: info@jarobtech.com"
+                    style={{ textDecoration: "none", color: "black" }}
+                    onClick={handleClick}
+                  >
+                    <Box
+                      sx={{
+                        display: "flex",
+                        alignItems: "center",
+                        cursor: "pointer",
+                      }}
+                    >
+                      <IconButton>
+                        <AiOutlineMail color={"#3d73ec"} />
+                      </IconButton>
+                      <Typography
+                        sx={{
+                          fontFamily: "Inter",
+                          "&:hover ": {
+                            color: "#5dc30f",
+                          },
+                        }}
+                      >
+                        info@jarobtech.com
+                      </Typography>
+                    </Box>
+                  </a>
                 </Box>
-                </a>
-              </Box>
                 {/* ===============================SOCIAL LINKS==================================================== */}
-             {/* <Box
+                {/* <Box
                 sx={{
                   display: "flex",
                   // justifyContent:'space-between',
@@ -260,23 +298,19 @@ const ContactForm = () => {
                   </Typography>
                 </a>
               </Box> */}
-
-
-
-             </Box>
-
+              </Box>
             </Box>
           </Grid>
 
-
-          <Grid item lg={7} md={7} sm={12} xs={12} >
+          <Grid item lg={7} md={7} sm={12} xs={12}>
             <Box>
-            <Typography
+              <Typography
                 sx={{
                   fontSize: isSmall ? "1.6rem" : isMedium ? "2rem" : "2.5rem",
                   fontWeight: 600,
                   // color: theme.palette.primary.main,
-                  fontFamily: "Inter",color:'#4b4b4b'
+                  fontFamily: "Inter",
+                  color: "#4b4b4b",
                 }}
               >
                 Reach Us Quickly
@@ -336,10 +370,10 @@ const ContactForm = () => {
                   textTransform: "none",
                   fontFamily: "Inter",
                   fontWeight: 200,
-                  backgroundColor:'#3d73ec',
-                  padding:'1rem 3rem',
-                  borderRadius:'10px',
-                  fontSize:'1rem'
+                  backgroundColor: "#3d73ec",
+                  padding: "1rem 3rem",
+                  borderRadius: "10px",
+                  fontSize: "1rem",
                 }}
               >
                 Send Message
